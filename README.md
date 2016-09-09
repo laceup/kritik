@@ -1,3 +1,3 @@
 # kritik
 
-the review app
+the review app for everything
