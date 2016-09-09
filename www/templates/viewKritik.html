@@ -1,0 +1,20 @@
+<ion-view title="kritik" id="page6">
+    <ion-content padding="true" class="has-header">
+        <div class="list card " id="pastaAtCiGusta-card24">
+            <ion-item class="item-avatar  " id="pastaAtCiGusta-list-item19">
+                <h2>{{kritik.item.name | lowercase}} at {{kritik.place.name | lowercase}}</h2>
+            </ion-item>
+            <div style="margin: 0px; line-height: 250px; text-align: center; background-color: rgb(232, 235, 239);">
+                <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
+            </div>
+            <form id="pastaAtCiGusta-form11" class="list ">
+                <ion-item class="range range-positive " id="pastaAtCiGusta-range4">
+                    <input disabled type="range" value="{{kritik.rating}}" min="0" max="5">
+                </ion-item>
+            </form>
+            <div class="item item-body " id="pastaAtCiGusta-list-item-container5">
+                <p id="pastaAtCiGusta-markdown2" style="color:#000000;">{{kritik.comments}}</p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

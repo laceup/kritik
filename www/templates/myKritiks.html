@@ -1,0 +1,13 @@
+<ion-view title="my kritiks" id="page3">
+    <ion-content padding="true" class="has-header">
+        <form id="myKritiks-form4" class="list ">
+            <label class="item item-input" name="search">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" placeholder="search me">
+            </label>
+        </form>
+        <ion-list id="myKritiks-list3" ng-repeat="review in reviews">
+            <ion-item ui-sref="tabsController.kritikView({kritik: review, id: review.id})" id="myKritiks-list-{{review.id}}">{{review.item.name | lowercase}} at {{review.place.name | lowercase}}</ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
