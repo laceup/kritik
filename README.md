@@ -1,3 +1,3 @@
-# kritk
+# kritik
 
 the review app
